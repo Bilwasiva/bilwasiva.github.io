@@ -3,7 +3,7 @@
 # Name of website
 title: Welcome to Bilwasiva's Portfolio
 
-SEOTitle: bilwasiva | bilwasiva basu mallick | bilwa
+SEOTitle: bilwasiva | bilwasiva basu mallick | bilwa | amazon applied scientist | board topper | machine learning
 # Short description of your site
 description: A simple & humble soul, seeking the bliss of Infinite Knowledge & Serendipity!!!
 
@@ -94,7 +94,8 @@ share-links-active:
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
 url-pretty: "bilwasiva.com"  # eg. "deanattali.com/beautiful-jekyll"
-
+highlighter: rouge
+permalink: pretty
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag

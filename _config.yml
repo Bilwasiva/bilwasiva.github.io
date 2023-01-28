@@ -96,6 +96,10 @@ share-links-active:
 url-pretty: "bilwasiva.com"  # eg. "deanattali.com/beautiful-jekyll"
 highlighter: rouge
 permalink: pretty
+# Sidebar settings
+sidebar: true # whether or not using Sidebar.
+sidebar-about-description: "Lifelong learner"
+sidebar-avatar: https://github.com/Bilwasiva/bilwasiva.github.io/blob/master/img/bio-photo.jpg
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag

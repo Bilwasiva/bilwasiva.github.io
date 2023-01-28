@@ -10,15 +10,14 @@ My name is Bilwasiva Basu Mallick.
 I have done my Master's & Bachelor's in Computer Science. 
 These following attributes define me:
 
-- Working as an Applied Scientist at Amazon with **6+ YOE** in AI/ML
-- Bachelor's & Master's in Computer Science Engineering.
-- AI-ML-CV-NLP & DSA Enthusiast.
-- Competitive Coder & Tech Geek.
-- Strong tech acumen in Machine Learning, Deep Learning, Computer Vision, NLP, Advanced ML (Recommender systems, Personalization, Graph Neural Networks, Reinforcement Learning, NLU, NLG).
+- Working as an Applied Scientist at Amazon with **6+ Years of Experience** in AI/ML 💼🔬⏰💡
+- Bachelor's & Master's in Computer Science Engineering 👨‍🎓📚
+- AI-ML-CV-NLP & DSA Enthusiast 🧠🤓 + Competitive Coder & Tech Geek 🧑‍💻🚀
+- Strong tech acumen in Machine Learning, Deep Learning, Computer Vision, NLP, Advanced ML (Recommender systems, Personalization, Graph Neural Networks, Reinforcement Learning, NLU, NLG) 💻🔬🤖
 - Experience in Open Source Development, HLD/LLD System Design, Software Development.
-- I'm passionate about mentorship, creative writing, product development, business & finance.
-- I absolutely Love ML, Algorithms, Maths, Problem Solving & Sports.
-- Truth Seeker + Quizzer + Knowledge Aficionado + Photorapher + Detail Oriented individual.
+- I'm passionate about mentorship 🧑‍🏫, creative writing 📝, product development 🛠️, business & finance 📈.
+- I absolutely Love ML, Algorithms, Maths, Problem Solving & Sports 📊🧮🏏🏓 
+- Truth Seeker + Quizzer + Knowledge Aficionado + Photorapher + Detail Oriented individual 📚📷🔍
 - Favourite Pastime- Spending time with Parents & talking with them about everything under the sun.
 - And lastly, a grand welcome to my page: I'm always here to help you.
 

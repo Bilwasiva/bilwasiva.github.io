@@ -1,13 +1,10 @@
-
-
 ---
 layout: post
-title: Your Model Should not Stop Learning at Deployment- A Deep Dive into Test-Time Training
-image: /img/apache-kafka.png
+title: A Deep Dive into Test-Time Training.md
+image: /img/llm.jpg
 published: true
 ---
 
-***
 
 # Your Model Shouldn’t Stop Learning at Deployment: A Deep Dive into Test-Time Training
 

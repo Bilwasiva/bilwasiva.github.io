@@ -1,13 +1,3 @@
-The LaTeX is not rendering because your Markdown is currently using plain parentheses instead of proper math delimiters and some characters (like backslashes) are being escaped or altered by the editor pipeline (e.g., GitHub Pages/Jekyll). To fix it, you need to:
-
-- Wrap math inline as `\( ... \)`  
-- Wrap block equations as `\[ ... \]` on their own lines  
-- Make sure backslashes are preserved (no smart‑escaping) and that your Markdown engine has math support enabled (e.g., kramdown + MathJax/KaTeX for Jekyll).
-
-Below is the **same blog, fixed for proper Markdown + LaTeX**, with all math re-written using `\(` `\)` and `\[` `\]` and no broken brackets. You can paste this directly into a Markdown file; if your site is set up with MathJax/KaTeX, it will render correctly.
-
-***
-
 # Your Model Shouldn’t Stop Learning at Deployment: A Deep Dive into Test-Time Training
 
 For more than a decade, the standard deep learning lifecycle has been remarkably consistent:

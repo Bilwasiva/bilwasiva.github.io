@@ -2,7 +2,7 @@
 layout: post
 title: "A Deep Dive into Test-Time Training"
 date: 2026-01-01
-image: /img/m3.jpg
+image: /img/m3.jpg.PNG
 published: true
 ---
 

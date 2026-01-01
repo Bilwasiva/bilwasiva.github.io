@@ -1,16 +1,26 @@
 # --- General options --- #
 
 # Name of website
-title: Welcome to Bilwasiva's Portfolio
+title: "Bilwasiva's Portfolio"
 
-SEOTitle: bilwasiva | bilwasiva basu mallick | bilwa | amazon applied scientist | board topper | machine learning
+# SEO Title: Short but descriptive for search engines
+SEOTitle: "Bilwasiva | Applied Scientist | Machine Learning Enthusiast | Deep Learning Expert"
+
 # Short description of your site
-tagline: Lifelong Learner
-bio: Lifelong Learner
+tagline: "Lifelong Learner | Explorer of the Infinite"
 
-description: A simple & humble soul, seeking the bliss of Infinite Knowledge & Serendipity!!!
-keywords: bilwasiva, bilwa, machine learning, computer vision, nlp, deep learning, applied scientist, bilwa-website
+# Personal bio for the sidebar (can be displayed with the profile picture)
+bio: "Aspiring Applied Scientist in AI & Machine Learning. Passionate about innovation and technology."
+
+# Site description for SEO
+description: "Welcome to Bilwasiva's personal portfolio and blog. Dive into my journey in AI, ML, and more!"
+
+# Keywords for SEO
+keywords: "Bilwasiva, AI, ML, Deep Learning, Applied Scientist, Computer Vision, NLP, Data Science"
+
+# Dark Mode theme (auto-detect based on user's preference)
 dark-theme: auto
+
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
 # *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
@@ -52,26 +62,16 @@ avatar: "/img/bio-photo.jpg"
 # --- Background colour/image options --- #
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
-
-# navbar-col: "#F5F5F5"
-# navbar-text-col: "#404040"
-# navbar-children-col: "#F5F5F5"
-# page-col: "#FFFFFF"
-# link-col: "#008AFF"
-# hover-col: "#0085A1"
-# footer-col: "#F5F5F5"
-# footer-text-col: "#777777"
-# footer-link-col: "#404040"
-
 navbar-col: "#2196F3"
 navbar-text-col: "#FFFFFF"
 navbar-children-col: "#1E1E1E"
-page-col: "#64ffda"
+page-col: "#FFFFFF"
 link-col: "#008AFF"
 hover-col: "#0085A1"
-footer-col: "800080"
+footer-col: "#800080"
 footer-text-col: "#777777"
 footer-link-col: "#404040"
+
 
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour

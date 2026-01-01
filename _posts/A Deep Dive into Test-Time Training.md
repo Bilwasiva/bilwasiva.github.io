@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Your Model Shouldn’t Stop Learning at Deployment: A Deep Dive into Test-Time Training"
-image: /img/m1.png
+title: Your Model Shouldn’t Stop Learning at Deployment: A Deep Dive into Test-Time Training
+image: /img/llm.jpg
 published: true
 ---
 

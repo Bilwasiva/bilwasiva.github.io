@@ -1,6 +1,7 @@
 ---
 layout: post
-title: A Deep Dive into Test-Time Training.md
+title: "A Deep Dive into Test-Time Training"
+date: 2026-01-01
 image: /img/llm.jpg
 published: true
 ---

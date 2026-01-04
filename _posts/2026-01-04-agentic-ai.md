@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Coordination Latency as the Dominant Bottleneck in Agentic and Multimodal AI Systems"
+date: 2026-01-04
+image: /img/m5.jpg
+published: true
+---
+
 # Coordination Latency as the Dominant Bottleneck in Agentic and Multimodal AI Systems
 
 ## Abstract

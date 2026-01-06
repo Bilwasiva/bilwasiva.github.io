@@ -1,3 +1,10 @@
+---
+layout: post
+title: "The Rise of Inference Context Memory in 2026"
+date: 2026-01-06
+published: true
+---
+
 # Beyond the Context Window  
 ## The Rise of Inference Context Memory in 2026
 

@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Agentic AI Is Not About Tools. It Is About Time"
+date: 2026-01-07
+published: true
+---
+
 # Agentic AI Is Not About Tools. It Is About Time.
 
 For the last year, the AI world has been obsessed with agents.

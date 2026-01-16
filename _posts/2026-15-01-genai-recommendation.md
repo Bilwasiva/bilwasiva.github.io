@@ -1,7 +1,6 @@
-
 ---
 layout: post
-title: "  How GenAI Is Quietly Breaking Recommendation Systems "
+title: " How GenAI Is Quietly Breaking Recommendation Systems "
 date: 2026-01-15
 published: true
 ---

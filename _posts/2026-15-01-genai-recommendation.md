@@ -1,3 +1,11 @@
+
+---
+layout: post
+title: "  How GenAI Is Quietly Breaking Recommendation Systems "
+date: 2026-01-15
+published: true
+---
+
 # When AI Starts Training on Itself: How GenAI Is Quietly Breaking Recommendation Systems
 
 For more than a decade, recommendation systems have been one of the most powerful forces shaping the internet.

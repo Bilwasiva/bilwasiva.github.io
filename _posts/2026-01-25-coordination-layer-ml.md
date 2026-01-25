@@ -1,3 +1,10 @@
+---
+layout: post
+title: " From Models to Orchestration- The Quiet Evolution Defining the Future of GenAI Products "
+date: 2026-01-25
+published: true
+---
+
 # From Models to Orchestration: The Quiet Evolution Defining the Future of GenAI Products
 
 The most important transformation happening in artificial intelligence right now is surprisingly easy to miss.

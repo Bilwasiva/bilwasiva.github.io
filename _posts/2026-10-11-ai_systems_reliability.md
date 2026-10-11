@@ -6,21 +6,6 @@ published: true
 ---
 
 
----
-title: "From Intelligent Models to Trustworthy AI Systems"
-subtitle: "A Deep Technical Guide to Machine Learning, Deep Learning, Foundation Models, RAG, Agentic AI, and Production Reliability"
-date: "October 2026"
-tags:
-  - Artificial Intelligence
-  - Machine Learning
-  - Deep Learning
-  - Generative AI
-  - Large Language Models
-  - Agentic AI
-  - MLOps
-  - LLMOps
----
-
 # From Intelligent Models to Trustworthy AI Systems
 
 ## Why the next frontier of AI is not just smarter models—but systems that can reliably turn intelligence into real-world outcomes

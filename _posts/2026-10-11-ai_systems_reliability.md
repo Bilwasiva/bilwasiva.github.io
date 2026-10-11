@@ -106,9 +106,9 @@ $$
 
 Here:
 
-- \(x\) represents the input image.
-- \(f_{\theta}\) is the model parameterized by \(\theta\).
-- \(\hat{y}\) is the predicted category.
+- $x$ represents the input image.
+- $f_{\theta}$ is the model parameterized by $\theta$.
+- $\hat{y}$ is the predicted category.
 
 A language model maps a sequence of tokens to a probability distribution over possible next tokens. A forecasting model predicts future values from historical observations. A recommendation model estimates the relevance of a product to a user.
 
@@ -144,7 +144,7 @@ $$
 \hat{y} = F(x)
 $$
 
-where the system-level function \(F\) may consist of several stages:
+where the system-level function $F$ may consist of several stages:
 
 $$
 F = f_n \circ f_{n-1} \circ \cdots \circ f_2 \circ f_1
@@ -152,15 +152,15 @@ $$
 
 For example:
 
-- \(f_1\): input validation.
-- \(f_2\): context retrieval.
-- \(f_3\): model inference.
-- \(f_4\): decision or planning.
-- \(f_5\): tool execution.
-- \(f_6\): result verification.
-- \(f_7\): response generation and audit logging.
+- $f_1$: input validation.
+- $f_2$: context retrieval.
+- $f_3$: model inference.
+- $f_4$: decision or planning.
+- $f_5$: tool execution.
+- $f_6$: result verification.
+- $f_7$: response generation and audit logging.
 
-The composition symbol \(\circ\) indicates that one function's output becomes the next function's input.
+The composition symbol $\circ$ indicates that one function's output becomes the next function's input.
 
 The behavior of the overall system depends on the interactions among these functions. A failure in an early stage may contaminate every downstream stage.
 
@@ -174,12 +174,12 @@ This produces a crucial engineering principle:
 
 Let a system have the following normalized quality dimensions:
 
-- \(C\): capability.
-- \(R\): reliability.
-- \(S\): security.
-- \(O\): observability.
-- \(G\): governance.
-- \(E\): economic efficiency.
+- $C$: capability.
+- $R$: reliability.
+- $S$: security.
+- $O$: observability.
+- $G$: governance.
+- $E$: economic efficiency.
 
 A simple conceptual model is:
 
@@ -227,15 +227,15 @@ That difference defines much of the work ahead in AI engineering.
 
 Machine learning uses data to estimate functions that generalize beyond the examples used during training.
 
-Suppose a dataset contains \(N\) examples:
+Suppose a dataset contains $N$ examples:
 
 $$
 \mathcal{D} = \{(x_i,y_i)\}_{i=1}^{N}
 $$
 
-Here, \(x_i\) is an input and \(y_i\) is its target.
+Here, $x_i$ is an input and $y_i$ is its target.
 
-A model \(f_{\theta}\) produces predictions from inputs. Training typically involves minimizing a loss function that measures the discrepancy between predictions and targets.
+A model $f_{\theta}$ produces predictions from inputs. Training typically involves minimizing a loss function that measures the discrepancy between predictions and targets.
 
 The empirical risk minimization objective is:
 
@@ -284,7 +284,7 @@ $$
 y_{ik}\log(\hat{p}_{ik})
 $$
 
-where \(K\) is the number of classes.
+where $K$ is the number of classes.
 
 Minimizing the training objective is not the ultimate goal. The goal is to learn a model that performs well on data drawn from the environment in which it will be used.
 
@@ -294,7 +294,7 @@ A model can achieve low training loss while generalizing poorly because of overf
 
 Training data and production data are rarely identical in every respect.
 
-Let the training distribution be \(P_{\mathrm{train}}(x,y)\) and the deployment distribution be \(P_{\mathrm{deploy}}(x,y)\).
+Let the training distribution be $P_{\mathrm{train}}(x,y)$ and the deployment distribution be $P_{\mathrm{deploy}}(x,y)$.
 
 Ideally:
 
@@ -336,11 +336,11 @@ $$
 
 where:
 
-- \(h^{(l-1)}\) is the representation entering layer \(l\).
-- \(W_l\) is a learned weight matrix.
-- \(b_l\) is a bias vector.
-- \(\phi_l\) is a nonlinear activation function.
-- \(h^{(l)}\) is the resulting representation.
+- $h^{(l-1)}$ is the representation entering layer $l$.
+- $W_l$ is a learned weight matrix.
+- $b_l$ is a bias vector.
+- $\phi_l$ is a nonlinear activation function.
+- $h^{(l)}$ is the resulting representation.
 
 Nonlinear activations allow networks to model relationships that cannot be expressed by a single linear transformation.
 
@@ -354,7 +354,7 @@ $$
 \theta_t-\eta\nabla_{\theta}\mathcal{L}(\theta_t)
 $$
 
-Here, \(\eta\) is the learning rate.
+Here, $\eta$ is the learning rate.
 
 Deep learning became particularly effective in areas such as computer vision, speech recognition, natural-language processing, and complex pattern recognition because neural networks can learn useful representations from large amounts of data.
 
@@ -377,12 +377,12 @@ $$
 
 The components are:
 
-- \(Q\): queries.
-- \(K\): keys.
-- \(V\): values.
-- \(d_k\): the dimensionality of the key vectors.
+- $Q$: queries.
+- $K$: keys.
+- $V$: values.
+- $d_k$: the dimensionality of the key vectors.
 
-The query-key products estimate the relevance of each key to each query. Scaling by \(\sqrt{d_k}\) helps control the magnitude of the scores. Softmax converts the scores into normalized weights, which are then applied to the value vectors.
+The query-key products estimate the relevance of each key to each query. Scaling by $\sqrt{d_k}$ helps control the magnitude of the scores. Softmax converts the scores into normalized weights, which are then applied to the value vectors.
 
 Intuitively, attention lets the model determine which parts of the available sequence are relevant to a particular representation.
 
@@ -446,7 +446,7 @@ This is not merely a cost optimization. It is a way to assign each responsibilit
 
 ## 11. The reliability of a sequence of steps
 
-Suppose an AI workflow consists of \(n\) steps. Let each step succeed with probability \(p\).
+Suppose an AI workflow consists of $n$ steps. Let each step succeed with probability $p$.
 
 Under the simplifying assumptions that the steps are independent and have the same success probability, the probability that every step succeeds is:
 
@@ -478,7 +478,7 @@ The numbers above are an illustrative mathematical example, not a universal pred
 
 Real systems do not have identical success probabilities for every step.
 
-If step \(i\) succeeds with probability \(p_i\), and the steps are independent, then:
+If step $i$ succeeds with probability $p_i$, and the steps are independent, then:
 
 $$
 P(\text{complete success})
@@ -523,10 +523,10 @@ Reliability engineering often models how component failures combine into system 
 
 Suppose a workflow fails if any of the following events occurs:
 
-- \(A\): the wrong asset is selected.
-- \(B\): the wrong procedure is retrieved.
-- \(C\): the tool executes an invalid action.
-- \(D\): verification incorrectly reports success.
+- $A$: the wrong asset is selected.
+- $B$: the wrong procedure is retrieved.
+- $C$: the tool executes an invalid action.
+- $D$: verification incorrectly reports success.
 
 The failure event can be represented as:
 
@@ -609,8 +609,8 @@ Without verification, the system may report completion even though the desired s
 
 Let:
 
-- \(P_s\) be the probability that an action succeeds.
-- \(P_v\) be the probability that the verification mechanism correctly detects whether the action succeeded.
+- $P_s$ be the probability that an action succeeds.
+- $P_v$ be the probability that the verification mechanism correctly detects whether the action succeeded.
 
 A verification layer does not necessarily make the underlying action more reliable, but it can improve the system's ability to distinguish success from failure.
 
@@ -691,7 +691,7 @@ For example, a table containing equipment identifiers and associated tolerances 
 
 Long documents are divided into smaller retrieval units.
 
-If chunks are too large, they may contain excessive irrelevant information. If chunks are too small, they may lose the context needed to interpret a statement.
+If chunks are too large, they may contain excessive irrelevant information. If they are too small, they may lose the context needed to interpret a statement.
 
 Chunking strategies include:
 
@@ -710,7 +710,7 @@ A short FAQ entry may be best retrieved as a single unit. A complex engineering 
 
 An embedding model maps text or other supported inputs to vectors.
 
-Let \(q\) represent a query and \(d\) a candidate document. Their vector representations are \(e_q\) and \(e_d\).
+Let $q$ represent a query and $d$ a candidate document. Their vector representations are $e_q$ and $e_d$.
 
 Cosine similarity is one common measure of similarity:
 
@@ -802,9 +802,9 @@ This suggests evaluating RAG as a pipeline rather than as a single generation ta
 
 ## 19. Precision and recall in retrieval
 
-Suppose a retrieval system returns \(k\) documents for a query.
+Suppose a retrieval system returns $k$ documents for a query.
 
-Precision at \(k\) measures the proportion of retrieved documents that are relevant:
+Precision at $k$ measures the proportion of retrieved documents that are relevant:
 
 $$
 \operatorname{Precision@k}
@@ -813,7 +813,7 @@ $$
 {k}
 $$
 
-Recall at \(k\) measures the proportion of all relevant documents that appear in the retrieved set:
+Recall at $k$ measures the proportion of all relevant documents that appear in the retrieved set:
 
 $$
 \operatorname{Recall@k}
@@ -887,8 +887,8 @@ Common decoding strategies include:
 - Greedy decoding.
 - Beam search.
 - Temperature sampling.
-- Top-\(k\) sampling.
-- Nucleus or top-\(p\) sampling.
+- Top-$k$ sampling.
+- Nucleus or top-$p$ sampling.
 
 These methods influence the diversity, determinism, and structure of generated text.
 
@@ -1354,7 +1354,7 @@ Limitations:
 
 ## 39. The coordination problem
 
-Suppose a workflow contains \(m\) agents. If every agent communicates directly with every other agent, the number of possible pairwise communication links is:
+Suppose a workflow contains $m$ agents. If every agent communicates directly with every other agent, the number of possible pairwise communication links is:
 
 $$
 E=\frac{m(m-1)}{2}
@@ -1425,7 +1425,7 @@ The simplest architecture that meets the requirements is often the best starting
 
 Supervised learning uses labeled examples to estimate desired outputs. Reinforcement learning focuses on behavior that produces rewards through interaction with an environment.
 
-A policy \(\pi\) selects actions according to the current state. The objective may be expressed as:
+A policy $\pi$ selects actions according to the current state. The objective may be expressed as:
 
 $$
 J(\pi)
@@ -1438,9 +1438,9 @@ $$
 
 where:
 
-- \(r_t\) is the reward at time \(t\).
-- \(\gamma\) is a discount factor.
-- \(T\) is the time horizon.
+- $r_t$ is the reward at time $t$.
+- $\gamma$ is a discount factor.
+- $T$ is the time horizon.
 - The expectation is taken over trajectories induced by the policy and environment.
 
 In traditional reinforcement learning, rewards may represent game scores, control objectives, or other measurable outcomes.
@@ -1476,9 +1476,9 @@ Suppose a retrieval system is optimized solely for relevance scores. It may retr
 
 These examples illustrate a general problem: optimizing a proxy does not guarantee optimization of the underlying goal.
 
-Let \(R\) represent the measured reward and \(V\) the true value of the outcome.
+Let $R$ represent the measured reward and $V$ the true value of the outcome.
 
-Ideally, increases in \(R\) correspond to increases in \(V\). But if the proxy is poorly aligned, the relationship can break down.
+Ideally, increases in $R$ correspond to increases in $V$. But if the proxy is poorly aligned, the relationship can break down.
 
 A practical system should therefore combine automated metrics with outcome-based evaluation, adversarial testing, human review, and monitoring for unexpected behavior.
 
@@ -1604,9 +1604,9 @@ $$
 z_t=\frac{x_t-\mu}{\sigma}
 $$
 
-where \(x_t\) is the current measurement, \(\mu\) is a reference mean, and \(\sigma\) is the corresponding standard deviation.
+where $x_t$ is the current measurement, $\mu$ is a reference mean, and $\sigma$ is the corresponding standard deviation.
 
-A large absolute \(z_t\) can indicate an unusual observation under the assumptions of the reference distribution.
+A large absolute $z_t$ can indicate an unusual observation under the assumptions of the reference distribution.
 
 However, a simple z-score is not a universal fault detector. Sensor readings may be seasonal, autocorrelated, non-Gaussian, or dependent on operating conditions. The system should use an analysis method appropriate to the equipment and data.
 
@@ -1880,7 +1880,7 @@ A production system should measure the effectiveness of each control, not simply
 
 Generative systems may produce different outputs across repeated attempts.
 
-For a task that is successful on \(s\) of \(N\) trials, the empirical success rate is:
+For a task that is successful on $s$ of $N$ trials, the empirical success rate is:
 
 $$
 \hat{p}=\frac{s}{N}
@@ -2305,7 +2305,7 @@ The definition of success also matters. A task that completes but produces an in
 
 ## 83. Expected value and failure costs
 
-Suppose a system creates value \(V_s\) when it succeeds and incurs cost \(C_f\) when it fails.
+Suppose a system creates value $V_s$ when it succeeds and incurs cost $C_f$ when it fails.
 
 A simplified expected-value expression is:
 
@@ -2317,10 +2317,10 @@ $$
 
 where:
 
-- \(P_s\) is the probability of successful completion.
-- \(V_s\) is the value of success.
-- \(C_f\) is the cost associated with failure.
-- \(C_{\mathrm{op}}\) is the operating cost.
+- $P_s$ is the probability of successful completion.
+- $V_s$ is the value of success.
+- $C_f$ is the cost associated with failure.
+- $C_{\mathrm{op}}$ is the operating cost.
 
 This is a simplified model. Real systems may have multiple success and failure categories, variable costs, and asymmetric consequences.
 
@@ -2334,10 +2334,10 @@ Human review has a cost, but it can also prevent expensive mistakes.
 
 Let:
 
-- \(C_a\) be the automated processing cost.
-- \(C_h\) be the human review cost per reviewed task.
-- \(r\) be the proportion of tasks requiring review.
-- \(C_e\) be the expected cost of errors.
+- $C_a$ be the automated processing cost.
+- $C_h$ be the human review cost per reviewed task.
+- $r$ be the proportion of tasks requiring review.
+- $C_e$ be the expected cost of errors.
 
 A simplified total-cost expression is:
 
@@ -2937,7 +2937,7 @@ There is no universal answer because the right priority depends on the applicati
 
 ---
 
-## Editorial and Rendering Notes
+# Editorial and Rendering Notes
 
 - This article uses standard Markdown headings, tables, lists, fenced code blocks, and Mermaid syntax.
 - Mathematical expressions use `$...$` for inline mathematics and `$$...$$` for display equations. The delimiters are intentionally not double-escaped.

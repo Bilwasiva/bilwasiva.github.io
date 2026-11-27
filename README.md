@@ -11,6 +11,7 @@ A professional portfolio and long-form technical writing hub built on Jekyll and
 - [Projects](https://bilwasiva.github.io/projects/) — selected engineering areas, open-source references, and educational examples.
 - [About](https://bilwasiva.github.io/aboutme/) — background, interests, and ways to connect.
 - [RSS](https://bilwasiva.github.io/feed.xml) — subscribe to new articles.
+- Résumé access is linked to the existing public Google Drive document. Review that document periodically for currency.
 
 ## Development
 

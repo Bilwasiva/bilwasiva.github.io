@@ -1,20 +1,21 @@
-<nav class="bm-nav" aria-label="Primary navigation">
-  <div class="bm-nav-inner">
-    <a class="bm-brand" href="{{ '/' | relative_url }}" aria-label="Bilwasiva Basu Mallick — Home">
-      <span class="bm-brand-mark" aria-hidden="true">B<span>.</span></span>
-      <span class="bm-brand-name">Bilwasiva<span class="bm-brand-surname"> Basu Mallick</span></span>
+<header class="site-header" id="top">
+  <div class="shell site-header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Bilwasiva Basu Mallick homepage">
+      <span class="brand-mark" aria-hidden="true">B<span>.</span></span>
+      <span class="brand-type"><strong>Bilwasiva</strong><small>Basu Mallick</small></span>
     </a>
-    <div class="bm-nav-controls">
-      <button id="bm-theme-toggle" class="bm-icon-button" type="button" aria-label="Switch color theme" title="Switch color theme"><span aria-hidden="true">◐</span></button>
-      <button id="bm-menu-toggle" class="bm-icon-button bm-mobile-menu" type="button" aria-controls="bm-nav-links" aria-expanded="false" aria-label="Open navigation menu"><span aria-hidden="true">☰</span></button>
-    </div>
-    <div id="bm-nav-links" class="bm-nav-links">
-      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
-      <a href="{{ '/writing/' | relative_url }}" {% if page.url contains '/writing/' or page.layout == 'post' %}aria-current="page"{% endif %}>Writing</a>
-      <a href="{{ '/projects/' | relative_url }}" {% if page.url contains '/projects/' %}aria-current="page"{% endif %}>Projects</a>
-      <a href="{{ '/aboutme/' | relative_url }}" {% if page.url contains '/aboutme/' %}aria-current="page"{% endif %}>About</a>
-      <a href="https://drive.google.com/file/d/1gPxknuBRddlNLy1l4IB9EwX9YlxjICuM/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="View résumé on Google Drive (opens in new tab)">Résumé ↗</a>
-      <a class="bm-nav-cta" href="https://www.linkedin.com/in/bilwasiva/" target="_blank" rel="noopener noreferrer">Connect <span aria-hidden="true">↗</span></a>
+    <nav class="nav-links" id="primary-navigation" aria-label="Primary navigation">
+      <a {% if page.url == '/' %}aria-current="page"{% endif %} href="{{ '/' | relative_url }}">Home</a>
+      <a {% if page.url contains '/writing/' or page.layout == 'post' %}aria-current="page"{% endif %} href="{{ '/writing/' | relative_url }}">Writing</a>
+      <a {% if page.url contains '/projects/' %}aria-current="page"{% endif %} href="{{ '/projects/' | relative_url }}">Work</a>
+      <a {% if page.url contains '/start-here/' %}aria-current="page"{% endif %} href="{{ '/start-here/' | relative_url }}">Start here</a>
+      <a {% if page.url contains '/aboutme/' %}aria-current="page"{% endif %} href="{{ '/aboutme/' | relative_url }}">About</a>
+      <a href="https://drive.google.com/file/d/1gPxknuBRddlNLy1l4IB9EwX9YlxjICuM/view?usp=sharing" target="_blank" rel="noopener noreferrer">Résumé <span aria-hidden="true">↗</span></a>
+    </nav>
+    <div class="header-actions">
+      <button type="button" id="theme-toggle" class="icon-action theme-action" aria-label="Toggle appearance" title="Toggle light and dark mode"><span aria-hidden="true">◐</span></button>
+      <a class="header-cta" href="{{ '/contact/' | relative_url }}">Let's connect <span aria-hidden="true">↗</span></a>
+      <button type="button" id="menu-toggle" class="icon-action menu-action" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu"><span class="hamburger" aria-hidden="true"></span></button>
     </div>
   </div>
-</nav>
+</header>

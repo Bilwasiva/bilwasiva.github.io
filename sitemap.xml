@@ -8,6 +8,8 @@ permalink: /sitemap.xml
   <url><loc>{{ '/writing/' | absolute_url }}</loc></url>
   <url><loc>{{ '/projects/' | absolute_url }}</loc></url>
   <url><loc>{{ '/aboutme/' | absolute_url }}</loc></url>
+  <url><loc>{{ '/start-here/' | absolute_url }}</loc></url>
+  <url><loc>{{ '/contact/' | absolute_url }}</loc></url>
   {% for post in site.posts %}{% unless post.sitemap == false %}
   <url><loc>{{ post.url | absolute_url | xml_escape }}</loc><lastmod>{{ post.last_modified_at | default: post.date | date: '%Y-%m-%d' }}</lastmod></url>
   {% endunless %}{% endfor %}

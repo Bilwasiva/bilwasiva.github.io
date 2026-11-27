@@ -1,83 +1,40 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#10243d">
-  <meta name="author" content="{{ site.author.name | escape }}">
-  {% assign bm_title = page.meta-title | default: page.title | default: site.SEOTitle %}
-  {% assign bm_desc = page.meta-description | default: page.description | default: page.subtitle | default: site.description %}
-  {% assign bm_img = page.share-img | default: page.image | default: page.thumbnail-img | default: site.avatar %}
-  {% assign bm_canonical = page.canonical_url | default: page.url %}
-  {% if bm_img contains '://' %}{% assign bm_img_url = bm_img %}{% else %}{% assign bm_img_url = bm_img | absolute_url %}{% endif %}
-  <title>{% if page.url == '/' %}{{ site.SEOTitle | escape }}{% else %}{{ bm_title | escape }} | Bilwasiva Basu Mallick{% endif %}</title>
-  <meta name="description" content="{{ bm_desc | strip_html | strip_newlines | truncate: 165 | escape }}">
-  {% if page.noindex %}<meta name="robots" content="noindex,follow">{% else %}<meta name="robots" content="index,follow,max-image-preview:large">{% endif %}
-  <link rel="canonical" href="{{ bm_canonical | absolute_url }}">
-  <link rel="icon" href="{{ '/img/avatar-icon.png' | relative_url }}" type="image/png">
-  <link rel="alternate" type="application/rss+xml" title="Bilwasiva AI & ML articles" href="{{ '/feed.xml' | absolute_url }}">
-  <meta property="og:site_name" content="Bilwasiva Basu Mallick">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
-  <meta property="og:title" content="{{ bm_title | escape }}">
-  <meta property="og:description" content="{{ bm_desc | strip_html | strip_newlines | truncate: 200 | escape }}">
-  <meta property="og:url" content="{{ bm_canonical | absolute_url }}">
-  <meta property="og:image" content="{{ bm_img_url }}">
-  {% if page.layout == 'post' %}
-  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
-  {% for tag in page.tags limit:5 %}<meta property="article:tag" content="{{ tag | escape }}">{% endfor %}
-  {% endif %}
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ bm_title | escape }}">
-  <meta name="twitter:description" content="{{ bm_desc | strip_html | strip_newlines | truncate: 200 | escape }}">
-  <meta name="twitter:image" content="{{ bm_img_url }}">
-  {% include gtag.html %}
-  {% include gtm_head.html %}
-  {% include google_analytics.html %}
-  {% if layout.common-ext-css %}{% for css in layout.common-ext-css %}{% include ext-css.html css=css %}{% endfor %}{% endif %}
-  {% if layout.common-css %}{% for css in layout.common-css %}<link rel="stylesheet" href="{{ css | relative_url }}">{% endfor %}{% endif %}
-  {% if layout.common-googlefonts %}{% for font in layout.common-googlefonts %}<link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{ font }}&display=swap">{% endfor %}{% endif %}
-  {% if page.ext-css %}{% for css in page.ext-css %}{% include ext-css.html css=css %}{% endfor %}{% endif %}
-  {% if page.css %}{% for css in page.css %}<link rel="stylesheet" href="{{ css | relative_url }}">{% endfor %}{% endif %}
-  {% if page.googlefonts %}{% for font in page.googlefonts %}<link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{ font }}&display=swap">{% endfor %}{% endif %}
-  {% if page.use_math and page.ext-js == nil %}
-  <!-- MathJax for older posts with $...$ and $$...$$ expressions. -->
-  <script>window.MathJax = {tex:{inlineMath:[['$', '$'],['\\(', '\\)']],displayMath:[['$$', '$$'],['\\[', '\\]']]},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
-  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  {% endif %}
-  {% if page.url == '/' or page.url contains '/aboutme/' %}
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"ProfilePage",
-    "url":{{ page.url | absolute_url | jsonify }},
-    "mainEntity":{
-      "@type":"Person",
-      "@id":"https://bilwasiva.github.io/#person",
-      "name":"Bilwasiva Basu Mallick",
-      "url":"https://bilwasiva.github.io/",
-      "image":"https://bilwasiva.github.io/img/bio-photo.jpg",
-      "jobTitle":"AI and Machine Learning Scientist",
-      "description":{{ site.bio | jsonify }},
-      "knowsAbout":["Machine Learning","Deep Learning","Large Language Models","Agentic AI","Recommendation Systems","Computer Vision","Multimodal AI","AI Systems"],
-      "sameAs":["https://www.linkedin.com/in/bilwasiva/","https://github.com/Bilwasiva","https://medium.com/@f2015020"]
-    }
-  }
-  </script>
-  {% elsif page.layout == 'post' %}
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"BlogPosting",
-    "headline":{{ page.title | jsonify }},
-    "description":{{ bm_desc | strip_html | strip_newlines | jsonify }},
-    "url":{{ page.url | absolute_url | jsonify }},
-    "mainEntityOfPage":{{ page.url | absolute_url | jsonify }},
-    "author":{"@type":"Person","name":"Bilwasiva Basu Mallick","url":"https://bilwasiva.github.io/"},
-    "publisher":{"@type":"Person","name":"Bilwasiva Basu Mallick","url":"https://bilwasiva.github.io/"},
-    "datePublished":{{ page.date | date_to_xmlschema | jsonify }},
-    "dateModified":{{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
-    "image":{{ bm_img_url | jsonify }}
-  }
-  </script>
-  {% endif %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0c1427">
+<meta name="color-scheme" content="light dark">
+{% assign bm_title = page.meta-title | default: page.title | default: site.SEOTitle %}
+{% assign bm_desc = page.meta-description | default: page.description | default: page.subtitle | default: site.description %}
+{% assign bm_img = page.share-img | default: page.image | default: page.thumbnail-img | default: '/assets/img/ai-hero-social.jpg' %}
+{% assign bm_url = page.canonical_url | default: page.url %}
+{% if bm_img contains '://' %}{% assign bm_img_url = bm_img %}{% else %}{% assign bm_img_url = bm_img | absolute_url %}{% endif %}
+<title>{% if page.url == '/' %}{{ site.SEOTitle | escape }}{% else %}{{ bm_title | escape }} | Bilwasiva Basu Mallick{% endif %}</title>
+<meta name="description" content="{{ bm_desc | strip_html | strip_newlines | truncate: 160 | escape }}">
+<meta name="author" content="Bilwasiva Basu Mallick">
+<meta name="robots" content="{% if page.noindex %}noindex,follow{% else %}index,follow,max-image-preview:large{% endif %}">
+<link rel="canonical" href="{{ bm_url | absolute_url }}">
+<link rel="icon" type="image/svg+xml" href="{{ '/assets/img/bm-favicon.svg' | relative_url }}">
+<link rel="alternate" type="application/rss+xml" title="Bilwasiva — Technical Writing" href="{{ '/feed.xml' | absolute_url }}">
+<meta property="og:site_name" content="Bilwasiva Basu Mallick">
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:title" content="{{ bm_title | escape }}">
+<meta property="og:description" content="{{ bm_desc | strip_html | strip_newlines | truncate: 200 | escape }}">
+<meta property="og:url" content="{{ bm_url | absolute_url }}">
+<meta property="og:image" content="{{ bm_img_url }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ bm_title | escape }}">
+<meta name="twitter:description" content="{{ bm_desc | strip_html | strip_newlines | truncate: 200 | escape }}">
+<meta name="twitter:image" content="{{ bm_img_url }}">
+{% if page.layout == 'post' %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">{% for tag in page.tags limit:5 %}<meta property="article:tag" content="{{ tag | escape }}">{% endfor %}{% endif %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/css/site.css' | relative_url }}">
+{% if page.url == '/' %}<link rel="preload" as="image" href="{{ '/assets/img/ai-hero-laboratory.webp' | relative_url }}">{% endif %}
+{% if page.use_math %}<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']]},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>{% endif %}
+{% if page.url == '/' or page.url contains '/aboutme/' or page.url contains '/about/' %}
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","url":{{ bm_url | absolute_url | jsonify }},"mainEntity":{"@type":"Person","@id":"https://bilwasiva.github.io/#person","name":"Bilwasiva Basu Mallick","url":"https://bilwasiva.github.io/","jobTitle":"AI and Machine Learning Scientist","description":{{ site.bio | jsonify }},"alumniOf":[{"@type":"CollegeOrUniversity","name":"BITS Pilani"}],"affiliation":{"@type":"CollegeOrUniversity","name":"The Ohio State University"},"knowsAbout":["Machine Learning","Deep Learning","Recommendation Systems","NLP","Computer Vision","Large Language Models","Agentic AI","ML Infrastructure"],"sameAs":["https://www.linkedin.com/in/bilwasiva/","https://github.com/Bilwasiva","https://medium.com/@f2015020"]}}</script>
+{% elsif page.layout == 'post' %}
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":{{ page.title | jsonify }},"description":{{ bm_desc | strip_html | strip_newlines | jsonify }},"url":{{ bm_url | absolute_url | jsonify }},"datePublished":{{ page.date | date_to_xmlschema | jsonify }},"dateModified":{{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},"author":{"@type":"Person","name":"Bilwasiva Basu Mallick","url":"https://bilwasiva.github.io/"},"image":{{ bm_img_url | jsonify }}}</script>
+{% endif %}
 </head>

@@ -1,38 +1,14 @@
 ---
-layout: page
-title: "About Bilwasiva Basu Mallick"
-subtitle: "AI/ML scientist, systems builder, and technical writer"
-meta-description: "Learn about Bilwasiva Basu Mallick's background in machine learning, applied science, LLMs, recommendation systems, AI engineering, and technology leadership."
+layout: base
 permalink: /aboutme/
+title: "About Bilwasiva Basu Mallick"
+meta-title: "About Bilwasiva Basu Mallick | AI Scientist & Research Engineer"
+meta-description: "Professional biography of Bilwasiva Basu Mallick: experience at KLA, Amazon and Oracle, STEM MBA at Ohio State, computer science education at BITS Pilani, and applied AI/ML interests."
 ---
-
-## Hello, I'm Bilwasiva.
-
-I work on the intersection of **machine learning research, production AI engineering, and meaningful product outcomes**. My interests span both the mathematical foundations of intelligent models and the operational realities of deploying them: data quality, experimentation, latency, reliability, security, and human oversight.
-
-My professional background includes applied AI and ML work at **Amazon** and **KLA**, with experience across recommendation and personalization systems, deep learning, natural language processing, multimodal modeling, and agentic workflows. My focus is on asking the right technical questions, building systems thoughtfully, and measuring what actually improves outcomes.
-
-I'm pursuing a **STEM-designated MBA at The Ohio State University Fisher College of Business**, with expected graduation in **April 2027**. The combination of technical depth and business training informs how I think about choosing problems, aligning teams, and evaluating the impact of AI investments.
-
-## Areas I explore
-
-- **Machine learning and deep learning:** predictive modeling, optimization, model evaluation, representation learning, and experimental rigor.
-- **Large language models and AI infrastructure:** transformers, retrieval, inference optimization, evaluation, and deployment trade-offs.
-- **Agentic AI:** tool use, orchestration, context engineering, human-in-the-loop control, and reliability.
-- **Recommendation systems:** ranking, retrieval, personalization, and practical experimentation.
-- **Computer vision and multimodal systems:** vision-language learning, perception, and emerging physical AI architectures.
-- **Research-to-product engineering:** transforming ideas into reproducible, monitored, maintainable applications.
-
-## Why I write
-
-I believe the best technical explanations connect **intuition, mathematics, algorithms, implementation details, engineering constraints, and failure modes**. I publish long-form articles to make complex topics more accessible without removing the important technical nuance.
-
-You can explore the [technical writing archive]({{ '/writing/' | relative_url }}) or my [selected projects and systems work]({{ '/projects/' | relative_url }}).
-
-## Let's connect
-
-I welcome conversations with researchers, engineers, technical leaders, and teams working on challenging AI/ML problems. I'm especially interested in work where model quality, engineering excellence, and trustworthy deployment meet.
-
-**[Connect on LinkedIn](https://www.linkedin.com/in/bilwasiva/)** · **[Explore GitHub](https://github.com/Bilwasiva)** · **[Email me](mailto:bilwa496.senior.ml.scientist@gmail.com)**
-
-For more background, see my [additional technical portfolio](https://bilwasiva-leadership-mba.pages.dev/#tech).
+<main id="main-content">
+<header class="page-hero"><div class="shell"><p class="overline">ABOUT / THE PERSON BEHIND THE WORK</p><h1>Curiosity meets <em>engineering discipline.</em></h1><p>I'm Bilwasiva Basu Mallick—an applied AI/ML scientist who enjoys solving hard technical problems, connecting research to products, and turning complex ideas into useful explanations.</p></div></header>
+<section class="content-section"><div class="shell about-grid"><div class="about-prose"><p>I work across the intersection of <strong>machine learning, deep learning, NLP, computer vision, recommender systems, foundation models, and production AI engineering</strong>. My background spans applied-science and enterprise environments, including work at <strong>Amazon, Oracle, and KLA</strong>.</p><p>The questions that keep me engaged have both mathematical and practical dimensions: What should the model optimize? How do we establish that it generalizes? How do we deploy it securely? What happens when retrieval or tools fail? Does the system create verified value for the people who use it?</p><p>My current studies add a complementary perspective. I'm pursuing a <strong>STEM-designated MBA at The Ohio State University Fisher College of Business</strong>, with expected completion in <strong>April 2027</strong>. I previously earned undergraduate and graduate computer-science degrees from <strong>BITS Pilani</strong>.</p><h2>What I bring to the work</h2><p>I enjoy the full arc: forming hypotheses, designing experiments, implementing models, building engineering systems, evaluating failure modes, communicating trade-offs, and collaborating with cross-functional teams. I am especially drawn to work at the boundary between model capability and real-world reliability.</p><h2>Why I publish technical essays</h2><p>Technical writing is a way to test understanding and make it transferable. I aim to connect intuition with mathematics, algorithms, implementation decisions, system constraints, and honest limitations—not merely list new models and trends.</p><p>You can explore the <a href="{{ '/writing/' | relative_url }}">complete writing library</a>, follow a <a href="{{ '/start-here/' | relative_url }}">curated reading pathway</a>, or review <a href="{{ '/projects/' | relative_url }}">selected systems and source code</a>.</p></div><aside class="about-profile"><img src="{{ '/img/bio-photo.jpg' | relative_url }}" alt="Portrait of Bilwasiva Basu Mallick" width="480" height="480" loading="lazy"><span class="card-eyebrow">AI / MACHINE LEARNING</span><h3>Bilwasiva Basu Mallick</h3><p>Scientist · Systems builder · Technical writer</p><a href="https://www.linkedin.com/in/bilwasiva/" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a><a href="https://github.com/Bilwasiva" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://bilwasiva-leadership-mba.pages.dev/#home" target="_blank" rel="noopener noreferrer">Additional portfolio ↗</a><a href="{{ '/contact/' | relative_url }}">Contact ↗</a></aside></div></section>
+<section class="content-section alt"><div class="shell"><p class="overline">PROFESSIONAL JOURNEY</p><h2 class="subheading">A continuing exploration of applied intelligence</h2><div class="grid-2"><div class="journey-card"><strong>KLA · 2026</strong><p>AI/ML research and engineering with a focus on multi-agent workflows and supporting systems.</p></div><div class="journey-card"><strong>Amazon · 2021–2025</strong><p>Applied science involving recommendation, personalization, and intelligent systems.</p></div><div class="journey-card"><strong>Oracle · 2019–2021</strong><p>Enterprise applied machine learning and software engineering.</p></div><div class="journey-card"><strong>Earlier research & engineering</strong><p>Computer-science and software-engineering work, including earlier research and development experience.</p></div><div class="journey-card"><strong>Ohio State Fisher · Through 2027</strong><p>STEM MBA; expected graduation April 2027.</p></div><div class="journey-card"><strong>BITS Pilani</strong><p>Graduate and undergraduate study in Computer Science.</p></div></div></div></section>
+<section class="content-section"><div class="shell"><p class="overline">AREAS OF INTEREST</p><h2 class="subheading">The themes connecting my work</h2><div class="skill-matrix"><div><h3>Learning & representation</h3><p>Machine learning, optimization, deep learning, probabilistic reasoning, multimodal representation and evaluation.</p></div><div><h3>Foundation models & LLMs</h3><p>Transformers, reasoning, RAG, tuning approaches, serving systems, and model reliability.</p></div><div><h3>Autonomous & agentic systems</h3><p>Tool orchestration, state, memory, workflows, security, evaluation, and safe delegation.</p></div><div><h3>Applied ML & data products</h3><p>Ranking, recommendation, personalization, experimentation, data pipelines, and production ML.</p></div></div></div></section>
+<section class="closing-cta"><div class="shell closing-inner"><div><p class="overline">LET'S CONNECT</p><h2>Good conversations lead to better ideas.</h2><p>I welcome discussions about applied AI research, engineering, academic collaboration, and opportunities to build robust intelligent systems.</p></div><div class="closing-actions"><a class="button button-cyan" href="{{ '/contact/' | relative_url }}">Start a conversation ↗</a><a class="button button-dark-outline" href="{{ '/writing/' | relative_url }}">Read my work →</a></div></div></section>
+</main>

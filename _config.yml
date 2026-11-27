@@ -1,10 +1,10 @@
 # Bilwasiva Basu Mallick — research, engineering and technical writing.
 # Retains compatibility with the site's existing Beautiful Jekyll layouts.
-title: "Bilwasiva Basu Mallick | AI & Machine Learning Scientist"
-SEOTitle: "Bilwasiva Basu Mallick | Applied AI, LLMs & ML Systems"
+title: "Bilwasiva Basu Mallick — AI Scientist & ML Engineer"
+SEOTitle: "Bilwasiva Basu Mallick | AI Scientist, ML Systems & Research"
 tagline: "Applied AI research, engineering, and reliable intelligent systems"
 bio: "AI/ML scientist and systems builder working across deep learning, recommendation systems, multimodal AI, LLMs, and production agentic systems."
-description: "Explore Bilwasiva Basu Mallick's AI/ML research, engineering projects, technical articles, and work on LLMs, agentic AI, and reliable machine learning systems."
+description: "Applied AI/ML scientist with experience across KLA, Amazon and Oracle. Research-minded engineering, recommendations, LLMs, agentic AI, ML infrastructure and technical writing."
 keywords: "Bilwasiva Basu Mallick, Bilwasiva, machine learning scientist, applied scientist, AI engineering, ML systems, agentic AI, large language models, recommendation systems, computer vision, multimodal AI"
 url: "https://bilwasiva.github.io"
 baseurl: ""
@@ -15,6 +15,8 @@ navbar-links:
   Writing: "/writing/"
   Projects: "/projects/"
   About: "/aboutme/"
+  Start Here: "/start-here/"
+  Contact: "/contact/"
 
 avatar: "/img/bio-photo.jpg"
 navbar-col: "#14263e"

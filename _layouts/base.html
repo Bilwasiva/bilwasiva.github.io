@@ -1,29 +1,14 @@
 ---
-common-css:
-  - "/css/bootstrap.min.css"
-  - "/css/bootstrap-social.css"
-  - "/css/main.css"
-  - "/css/portfolio.css"
-common-ext-css:
-  - "//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
-common-googlefonts:
-  - "Lora:400,700,400italic,700italic"
-  - "Open+Sans:300,400,400italic,600,700,800"
-common-js:
-  - "/js/jquery-1.11.2.min.js"
-  - "/js/bootstrap.min.js"
-  - "/js/main.js"
-  - "/js/portfolio.js"
 ---
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   {% include head.html %}
-  <body>
-    <a class="skip-to-content" href="#main-content">Skip to content</a>
-    {% include gtm_body.html %}
+  <body class="site-body {% if page.layout == 'post' %}is-post{% endif %}">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     {% include nav.html %}
     {{ content }}
     {% include footer.html %}
-    {% include footer-scripts.html %}
+    <script defer src="{{ '/js/site.js' | relative_url }}"></script>
+    {% if page.ext-js %}{% for js in page.ext-js %}{% if js.href %}<script defer src="{{ js.href }}"></script>{% else %}<script defer src="{{ js }}"></script>{% endif %}{% endfor %}{% elsif page.use_math %}<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>{% endif %}
   </body>
 </html>

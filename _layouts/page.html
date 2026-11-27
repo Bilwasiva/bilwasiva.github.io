@@ -1,9 +1,4 @@
 ---
 layout: base
 ---
-{% include header.html type="page" %}
-<main id="main-content" class="container bm-classic-page" role="main" tabindex="-1">
-  <div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-    {{ content }}
-  </div></div>
-</main>
+<main class="shell standalone-page" id="main-content"><p class="overline">BILWASIVA / PERSPECTIVES</p><h1>{{ page.title }}</h1>{% if page.subtitle %}<p class="page-dek">{{ page.subtitle }}</p>{% endif %}<div class="prose">{{ content }}</div></main>

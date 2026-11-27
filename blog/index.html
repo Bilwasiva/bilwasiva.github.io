@@ -1,11 +1,9 @@
 ---
-layout: default
-title: Bilwasiva's Blog
+layout: base
+title: "Blog archive"
+meta-description: "Browse Bilwasiva Basu Mallick's updated technical writing archive."
+permalink: /blog/
+noindex: true
+canonical_url: /writing/
 ---
-	<h1>{{ page.title }}</h1>
-	<ul class="posts">
-
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
+<main id="main-content" class="bm-inner-page"><div class="bm-container bm-legacy-landing"><p class="bm-kicker">The writing archive has a new home</p><h1>Find all my AI and machine learning articles in one place.</h1><p>The full archive now supports topic filters, search, featured visuals, and easier navigation.</p><a class="bm-btn bm-btn-primary" href="{{ '/writing/' | relative_url }}">Open the writing archive ↗</a></div></main>

@@ -1,57 +1,19 @@
-<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      {%- if site.title-img -%}
-        <a class="navbar-brand navbar-brand-logo" href="{{ '' | absolute_url }}"><img src="{{ site.title-img }}"/></a>
-      {%- else -%}
-        <a class="navbar-brand" href="{{ '' | absolute_url }}">{{ site.title }}</a>
-      {%- endif -%}
+<nav class="bm-nav" aria-label="Primary navigation">
+  <div class="bm-nav-inner">
+    <a class="bm-brand" href="{{ '/' | relative_url }}" aria-label="Bilwasiva Basu Mallick — Home">
+      <span class="bm-brand-mark" aria-hidden="true">B<span>.</span></span>
+      <span class="bm-brand-name">Bilwasiva<span class="bm-brand-surname"> Basu Mallick</span></span>
+    </a>
+    <div class="bm-nav-controls">
+      <button id="bm-theme-toggle" class="bm-icon-button" type="button" aria-label="Switch color theme" title="Switch color theme"><span aria-hidden="true">◐</span></button>
+      <button id="bm-menu-toggle" class="bm-icon-button bm-mobile-menu" type="button" aria-controls="bm-nav-links" aria-expanded="false" aria-label="Open navigation menu"><span aria-hidden="true">☰</span></button>
     </div>
-
-    <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav navbar-right">
-      {%- for link in site.navbar-links -%}
-        {%- if link[1].first %}
-          <li class="navlinks-container">
-            <a class="navlinks-parent" href="javascript:void(0)">{{ link[0] }}</a>
-            <div class="navlinks-children">
-              {%- for childlink in link[1] -%}
-              {%- for linkparts in childlink %}
-              <a href="{{ linkparts[1] | relative_url }}">{{ linkparts[0] }}</a>
-              {%- endfor -%}
-              {%- endfor %}
-            </div>
-          </li>
-        {% else %}
-          <li><a href="{{ link[1] | relative_url }}">{{ link[0] }}</a></li>
-        {%- endif -%}
-      {%- endfor -%}
-      </ul>
+    <div id="bm-nav-links" class="bm-nav-links">
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
+      <a href="{{ '/writing/' | relative_url }}" {% if page.url contains '/writing/' or page.layout == 'post' %}aria-current="page"{% endif %}>Writing</a>
+      <a href="{{ '/projects/' | relative_url }}" {% if page.url contains '/projects/' %}aria-current="page"{% endif %}>Projects</a>
+      <a href="{{ '/aboutme/' | relative_url }}" {% if page.url contains '/aboutme/' %}aria-current="page"{% endif %}>About</a>
+      <a class="bm-nav-cta" href="https://www.linkedin.com/in/bilwasiva/" target="_blank" rel="noopener noreferrer">Connect <span aria-hidden="true">↗</span></a>
     </div>
-
-	{% if page.image and (layout.show-avatar or page.show-avatar) %}
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-	    <a href="{{ '' | absolute_url }}">
-	      <img class="avatar-img" src="{{ page.image | relative_url }}" />
-		</a>
-	  </div>
-	</div>
-	{% elsif site.avatar and (layout.show-avatar or page.show-avatar) %}
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-	    <a href="{{ '' | absolute_url }}">
-	      <img class="avatar-img" src="{{ site.avatar | relative_url }}" />
-		</a>
-	  </div>
-	</div>
-	{% endif %}
-
   </div>
 </nav>

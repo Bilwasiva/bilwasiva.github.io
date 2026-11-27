@@ -1,50 +1,32 @@
-# --- General options --- #
-# Name of website
-title: "Bilwasiva's Portfolio | AI & ML Enthusiast"
+# Bilwasiva Basu Mallick — research, engineering and technical writing.
+# Retains compatibility with the site's existing Beautiful Jekyll layouts.
+title: "Bilwasiva Basu Mallick | AI & Machine Learning Scientist"
+SEOTitle: "Bilwasiva Basu Mallick | Applied AI, LLMs & ML Systems"
+tagline: "Applied AI research, engineering, and reliable intelligent systems"
+bio: "AI/ML scientist and systems builder working across deep learning, recommendation systems, multimodal AI, LLMs, and production agentic systems."
+description: "Explore Bilwasiva Basu Mallick's AI/ML research, engineering projects, technical articles, and work on LLMs, agentic AI, and reliable machine learning systems."
+keywords: "Bilwasiva Basu Mallick, Bilwasiva, machine learning scientist, applied scientist, AI engineering, ML systems, agentic AI, large language models, recommendation systems, computer vision, multimodal AI"
+url: "https://bilwasiva.github.io"
+baseurl: ""
+lang: en
 
-# SEO Title: Short but descriptive for search engines
-SEOTitle: "Bilwasiva | Applied Scientist | AI & Machine Learning | Deep Learning Expert | Innovator"
-
-# Short description of your site
-tagline: "Lifelong Learner | Explorer of AI & ML Frontiers"
-
-# Personal bio for the sidebar (can be displayed with the profile picture)
-bio: "Aspiring Applied Scientist & AI Enthusiast with a passion for innovation and real-world problem solving through deep learning."
-
-# Site description for SEO
-description: "Welcome to Bilwasiva's personal portfolio and blog. Explore my journey in AI, ML, Deep Learning, and more!"
-
-# Keywords for SEO
-keywords: "Bilwasiva, AI, ML, Deep Learning, Applied Scientist, Computer Vision, NLP, Data Science, Innovation, Machine Learning Enthusiast"
-
-# Dark Mode theme (auto-detect based on user's preference)
-dark-theme: auto
-
-# --- Navigation bar options --- #
 navbar-links:
-  About Me: "aboutme"
-  Blog Resources:
-    - My Medium Blog: "https://medium.com/@f2015020"
-    - My Wordpress Blog: "https://bilwasiva.wordpress.com/"
-  Resume: "https://drive.google.com/file/d/1gPxknuBRddlNLy1l4IB9EwX9YlxjICuM/view?usp=sharing"
-  My Projects: "https://github.com/bilwa496"
-  Author's Home: "https://bilwasiva.github.io/"
+  Home: "/"
+  Writing: "/writing/"
+  Projects: "/projects/"
+  About: "/aboutme/"
 
-# Image to show in the navigation bar - image must be a square (width = height)
-avatar: "/img/bio-photo.jpg"  # Replace with your personal image for a more welcoming vibe
+avatar: "/img/bio-photo.jpg"
+navbar-col: "#14263e"
+navbar-text-col: "#ffffff"
+navbar-children-col: "#eff6fa"
+page-col: "#f7f9fc"
+link-col: "#087d8b"
+hover-col: "#075d6b"
+footer-col: "#0c1b2e"
+footer-text-col: "#c4d2df"
+footer-link-col: "#80dbdc"
 
-# --- Background color/image options --- #
-navbar-col: "#3D6A99"  # Elegant and soothing blue tones
-navbar-text-col: "#FFFFFF"
-navbar-children-col: "#F2F2F2"  # Lighter background for dropdowns
-page-col: "#F7F7F7"  # Soft background for readability
-link-col: "#009688"  # Fresh, modern accent color
-hover-col: "#00695C"  # Darker hover effect for links
-footer-col: "#1A1A1A"  # Dark footer to complement the navbar
-footer-text-col: "#B0BEC5"  # Soft, readable footer text color
-footer-link-col: "#80CBC4"  # Harmonizing footer link color
-
-# --- Footer options --- #
 author:
   name: "Bilwasiva Basu Mallick"
 
@@ -52,33 +34,25 @@ social-network-links:
   rss: true
   email: "bilwa496.senior.ml.scientist@gmail.com"
   linkedin: bilwasiva
-  github: bilwa496
-  twitter: bilwasiva
-  telephone: +91 7980893569
+  github: Bilwasiva
   youtube: c/BilwasivaBasuMallick
 
-# --- Web Statistics Section --- #
-# Enable Google Analytics or use other stats platforms for better tracking
-google_analytics: "YOUR-GA-ID-HERE"
+# Populate only with a real analytics property; no placeholder tracking IDs.
+google_analytics: ""
+comments: false
 
-# --- Comments --- #
-comments: true  # Enable comments for better engagement
-
-# --- Pagination --- #
-paginate: 5  # Adjust the number of posts to show per page
-
-# --- Exclude certain files --- #
 exclude:
   - CHANGELOG.md
   - CNAME
   - LICENSE
   - README.md
+  - Gemfile
+  - Gemfile.lock
 
-# --- Miscellaneous --- #
-timezone: "India/Delhi"
+timezone: "America/New_York"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 title-separator: "|"
 date_format: "%B %-d, %Y"
-excerpt_length: 100  # Lengthen the excerpt for better introductions
+excerpt_length: 70

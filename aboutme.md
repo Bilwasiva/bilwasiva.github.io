@@ -1,30 +1,38 @@
 ---
 layout: page
-title: About me
-subtitle: >-
-  A simple & humble soul seeking the bliss of Infinite Knowledge & Serendipity!!!
-published: true
+title: "About Bilwasiva Basu Mallick"
+subtitle: "AI/ML scientist, systems builder, and technical writer"
+meta-description: "Learn about Bilwasiva Basu Mallick's background in machine learning, applied science, LLMs, recommendation systems, AI engineering, and technology leadership."
+permalink: /aboutme/
 ---
 
-My name is Bilwasiva Basu Mallick.  
-I have done my Master's & Bachelor's in Computer Science. 
-These following attributes define me:
+## Hello, I'm Bilwasiva.
 
-- Working as an Applied Scientist at Amazon with **6+ Years of Experience** in AI/ML 💼🔬⏰💡
-- Bachelor's & Master's in Computer Science Engineering 👨‍🎓📚
-- AI-ML-CV-NLP & DSA Enthusiast 🧠🤓 + Competitive Coder & Tech Geek 🧑‍💻🚀
-- Strong tech acumen in Machine Learning, Deep Learning, Computer Vision, NLP, Advanced ML (Recommender systems, Personalization, Graph Neural Networks, Reinforcement Learning, NLU, NLG) 💻🔬🤖
-- Experience in Open Source Development, HLD/LLD System Design, Software Development.
-- I'm passionate about mentorship 🧑‍🏫, creative writing 📝, product development 🛠️, business & finance 📈.
-- I absolutely Love ML, Algorithms, Maths, Problem Solving & Sports 📊🧮🏏🏓 
-- Truth Seeker + Quizzer + Knowledge Aficionado + Photorapher + Detail Oriented individual 📚📷🔍
-- Favourite Pastime- Spending time with Parents & talking with them about everything under the sun.
-- And lastly, a grand welcome to my page: I'm always here to help you.
+I work on the intersection of **machine learning research, production AI engineering, and meaningful product outcomes**. My interests span both the mathematical foundations of intelligent models and the operational realities of deploying them: data quality, experimentation, latency, reliability, security, and human oversight.
 
-### my history
+My professional background includes applied AI and ML work at **Amazon** and **KLA**, with experience across recommendation and personalization systems, deep learning, natural language processing, multimodal modeling, and agentic workflows. My focus is on asking the right technical questions, building systems thoughtfully, and measuring what actually improves outcomes.
 
-Have a look at my portfolio and blogs/ Feel free to navigate through my technological & creative musings at [my blog](https://bilwasiva.wordpress.com/) and it will quench **all** your curiosities.
+I'm pursuing a **STEM-designated MBA at The Ohio State University Fisher College of Business**, with expected graduation in **April 2027**. The combination of technical depth and business training informs how I think about choosing problems, aligning teams, and evaluating the impact of AI investments.
 
-### note for Recruiters & Engineering Managers-
-For any Senior/Lead Machine Learning Scientist, Applied Scientist, Research Scientist, Data Scientist openings in your team, reach out to me in [LinkedIn](https://linkedin.com/in/bilwasiva) or drop a message to my [email](mailto:bilwa496.senior.ml.scientist@gmail.com)
-I am also open to SDE roles as well involving Machine Learning based work.
+## Areas I explore
+
+- **Machine learning and deep learning:** predictive modeling, optimization, model evaluation, representation learning, and experimental rigor.
+- **Large language models and AI infrastructure:** transformers, retrieval, inference optimization, evaluation, and deployment trade-offs.
+- **Agentic AI:** tool use, orchestration, context engineering, human-in-the-loop control, and reliability.
+- **Recommendation systems:** ranking, retrieval, personalization, and practical experimentation.
+- **Computer vision and multimodal systems:** vision-language learning, perception, and emerging physical AI architectures.
+- **Research-to-product engineering:** transforming ideas into reproducible, monitored, maintainable applications.
+
+## Why I write
+
+I believe the best technical explanations connect **intuition, mathematics, algorithms, implementation details, engineering constraints, and failure modes**. I publish long-form articles to make complex topics more accessible without removing the important technical nuance.
+
+You can explore the [technical writing archive]({{ '/writing/' | relative_url }}) or my [selected projects and systems work]({{ '/projects/' | relative_url }}).
+
+## Let's connect
+
+I welcome conversations with researchers, engineers, technical leaders, and teams working on challenging AI/ML problems. I'm especially interested in work where model quality, engineering excellence, and trustworthy deployment meet.
+
+**[Connect on LinkedIn](https://www.linkedin.com/in/bilwasiva/)** · **[Explore GitHub](https://github.com/Bilwasiva)** · **[Email me](mailto:bilwa496.senior.ml.scientist@gmail.com)**
+
+For more background, see my [additional technical portfolio](https://bilwasiva-leadership-mba.pages.dev/#tech).

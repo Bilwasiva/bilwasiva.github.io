@@ -1,0 +1,41 @@
+---
+layout: base
+title: "Technical Writing & AI Research Notes"
+meta-title: "AI & Machine Learning Technical Articles | Bilwasiva Basu Mallick"
+meta-description: "Explore technical deep dives on LLM inference, agentic AI, world models, reinforcement learning, recommendations, computer vision, and reliable production machine learning."
+permalink: /writing/
+---
+<main id="main-content" class="bm-inner-page" tabindex="-1">
+  <header class="bm-page-hero">
+    <div class="bm-container"><p class="bm-kicker">Research notes / Engineering essays / Deep dives</p><h1>Writing at the edge of <em>AI research and engineering.</em></h1><p>Detailed, practical explanations that connect fundamentals, mathematical intuition, system architecture, and production trade-offs.</p><div class="bm-page-meta"><span>{{ site.posts.size }} articles in the archive</span><a href="{{ '/feed.xml' | relative_url }}">Subscribe via RSS ↗</a></div></div>
+  </header>
+  <section class="bm-section bm-section-muted" aria-label="Article directory">
+    <div class="bm-container">
+      <div class="bm-search-panel">
+        <label for="bm-post-search">Search articles</label>
+        <div class="bm-search-row"><span aria-hidden="true">⌕</span><input id="bm-post-search" type="search" autocomplete="off" placeholder="Search topics, concepts, titles…" aria-describedby="bm-result-count"></div>
+        <div class="bm-filter-row" role="group" aria-label="Filter articles by topic">
+          <button class="bm-filter active" type="button" data-topic="all" aria-pressed="true">All</button>
+          <button class="bm-filter" type="button" data-topic="agentic" aria-pressed="false">Agentic AI</button>
+          <button class="bm-filter" type="button" data-topic="llm" aria-pressed="false">LLMs &amp; inference</button>
+          <button class="bm-filter" type="button" data-topic="robotics" aria-pressed="false">Physical AI</button>
+          <button class="bm-filter" type="button" data-topic="recommendation" aria-pressed="false">Recommendations</button>
+          <button class="bm-filter" type="button" data-topic="machine learning" aria-pressed="false">Machine learning</button>
+        </div>
+        <p id="bm-result-count" class="bm-search-count" role="status" aria-live="polite">Showing all {{ site.posts.size }} articles</p>
+      </div>
+      <div id="bm-article-grid" class="bm-post-grid bm-post-grid-archive">
+        {% for post in site.posts %}
+        <article class="bm-post-card bm-searchable" data-search="{{ post.title | strip_html | escape }} {{ post.subtitle | default: post.description | strip_html | escape }} {{ post.tags | join: ' ' | escape }}" data-topics="{{ post.title | downcase | escape }} {{ post.tags | join: ' ' | downcase | escape }} {{ post.subtitle | default: post.description | downcase | escape }}">
+          <a class="bm-post-cover" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title | escape }}">
+            {% assign card_image = post.image | default: post.thumbnail-img | default: post.share-img %}
+            {% if card_image %}<img src="{{ card_image | relative_url }}" alt="Illustration for {{ post.title | escape }}" loading="lazy" decoding="async">{% else %}<span class="bm-cover-fallback" aria-hidden="true">B<span>.</span></span>{% endif %}
+          </a>
+          <div class="bm-post-body"><p class="bm-post-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %-d, %Y' }}</time><span aria-hidden="true">·</span> Research &amp; Engineering</p><h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2><p>{{ post.description | default: post.subtitle | default: post.excerpt | strip_html | strip_newlines | truncatewords: 26 }}</p><a class="bm-card-link" href="{{ post.url | relative_url }}">Read the deep dive <span aria-hidden="true">↗</span></a></div>
+        </article>
+        {% endfor %}
+      </div>
+      <p id="bm-no-results" class="bm-no-results" hidden>No matching articles. Try a different search or topic.</p>
+    </div>
+  </section>
+</main>
